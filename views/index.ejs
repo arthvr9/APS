@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Descarte Consciente</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Materiais para descarte</h1>
+  <ul>
+    <% for (let tipo in materiais) { %>
+      <li><a href="/material/<%= tipo %>"><%= materiais[tipo].nome %></a></li>
+    <% } %>
+  </ul>
+  <a href="/locais">Ver locais de coleta</a>
+</body>
+</html>

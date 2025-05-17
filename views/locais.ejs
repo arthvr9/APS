@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Locais de Coleta</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Locais de Coleta</h1>
+  <ul>
+    <% locais.forEach(local => { %>
+      <li><strong><%= local.nome %></strong> - <%= local.endereco %></li>
+    <% }) %>
+  </ul>
+  <a href="/">Voltar</a>
+</body>
+</html>

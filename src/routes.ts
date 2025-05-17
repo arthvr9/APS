@@ -7,7 +7,7 @@ interface Material {
   nome: string;
   descricao: string;
   imagem: string;
-  texto?: string;
+  texto: string;
 }
 
 const materiais: Record<string, Material> = {
